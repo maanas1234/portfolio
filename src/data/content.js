@@ -4,7 +4,7 @@ export const profile = {
   bio: [
     "I'm an I.T. undergraduate student. I love the field of deep learning and am a sucker for transformers. I have worked with Fortune 500 companies, building automations for them.",
     "Most of my time goes into LLM applications and agentic systems: RAG pipelines, corrective retrieval, local-first tools that don't need the cloud to be useful.",
-    "I've also got two papers on how LLMs behave under the hood — one on instruction fidelity, one on why models get lazier the longer they talk.",
+    "I've published a preprint on positional bias in peer review, and have a second paper — on why LLM agents get lazier the longer they talk — under review.",
     "30+ repos on GitHub, one merged PR into Hugging Face Transformers, and a habit of turning weird personal observations into actual experiments.",
     "I also freelance on the side — AI and automation builds for whoever needs one.",
     "I think of myself as someone who wants to understand everything precisely enough to rebuild it from scratch, and won't stop until the proof, the product, or the paycheck confirms he actually did.",
