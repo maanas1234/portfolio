@@ -8,7 +8,7 @@ export default function Home() {
 <p className="font-mono-tag text-sm text-[var(--accent)]">Hi, I'm Maanas</p>
           <h1 className="text-3xl font-semibold text-[var(--text)] sm:text-4xl">{profile.tagline}</h1>
           {profile.bio.map((para, i) => (
-            <p key={i} className="max-w-xl leading-relaxed text-[var(--text-dim)]">
+            <p key={i} className="leading-relaxed text-[var(--text-dim)]">
               {para}
             </p>
           ))}
