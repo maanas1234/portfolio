@@ -63,6 +63,26 @@ export const experience = [
 
 export const projects = [
   {
+    name: "RAG Eval System",
+    repo: "https://github.com/maanas1234/RAG-Eval-System",
+    stack: ["LangChain", "Chroma", "BM25", "RAGAS", "sentence-transformers", "Python"],
+    bullets: [
+      "Hybrid-retrieval RAG system built to practice rigorous evaluation, not just a working pipeline — Precision@k / Recall@k / MRR for retrieval, RAGAS (faithfulness, answer relevancy, context precision/recall) for generation, scored separately against a 33-query hand-labeled eval set",
+      "Found and fixed a real bug in LangChain's MultiQueryRetriever dedup logic (compared full Document equality across sub-retrievers with mismatched id fields), which was silently inflating retrieved-set size and producing an impossible recall@k of 1.15",
+      "Ran a full ablation series to justify every design choice: dropping multi-query retrieval matched or beat it on every metric while halving LLM calls per query; a BM25-vs-semantic-vs-hybrid comparison showed semantic-only beating the hybrid default on every retrieval metric (Recall@5 0.848 vs 0.818, MRR 0.703 vs 0.610)",
+    ],
+  },
+  {
+    name: "RAG Eval System",
+    repo: "https://github.com/maanas1234/RAG-Eval-System",
+    stack: ["Python", "LangChain", "ChromaDB", "BM25", "RAGAS", "OpenRouter"],
+    bullets: [
+      "Hybrid-retrieval RAG pipeline built specifically to practice the part most projects skip — rigorous evaluation; every architectural decision (k=5, dropping multi-query, semantic-only over hybrid) was driven by running ablations, not assumption",
+      "Hand-labeled 33-query eval set from a personal 69-note Obsidian vault, including trap queries with no answer in the corpus to test whether the system hallucinates or admits it doesn't know",
+      "Scores retrieval and generation independently — Precision@k, Recall@k, MRR for the retriever; faithfulness, answer relevancy, context precision, and context recall via RAGAS for the generator",
+    ],
+  },
+  {
     name: "Lumen Research",
     repo: "https://github.com/maanas1234/Lumen-Research",
     stack: ["FastAPI", "React", "FAISS", "Ollama", "RAG", "Python"],
