@@ -73,16 +73,6 @@ export const projects = [
     ],
   },
   {
-    name: "RAG Eval System",
-    repo: "https://github.com/maanas1234/RAG-Eval-System",
-    stack: ["Python", "LangChain", "ChromaDB", "BM25", "RAGAS", "OpenRouter"],
-    bullets: [
-      "Hybrid-retrieval RAG pipeline built specifically to practice the part most projects skip — rigorous evaluation; every architectural decision (k=5, dropping multi-query, semantic-only over hybrid) was driven by running ablations, not assumption",
-      "Hand-labeled 33-query eval set from a personal 69-note Obsidian vault, including trap queries with no answer in the corpus to test whether the system hallucinates or admits it doesn't know",
-      "Scores retrieval and generation independently — Precision@k, Recall@k, MRR for the retriever; faithfulness, answer relevancy, context precision, and context recall via RAGAS for the generator",
-    ],
-  },
-  {
     name: "Lumen Research",
     repo: "https://github.com/maanas1234/Lumen-Research",
     stack: ["FastAPI", "React", "FAISS", "Ollama", "RAG", "Python"],
