@@ -93,15 +93,6 @@ export const projects = [
     ],
   },
   {
-    name: "Corrective RAG (CRAG)",
-    repo: "https://github.com/maanas1234/Corrective-Rag",
-    stack: ["LangGraph", "LangChain", "Python", "FAISS"],
-    bullets: [
-      "Implemented full Corrective Retrieval-Augmented Generation (CRAG) pipeline with document grading, web fallback, and query rewriting",
-      "State machine: retrieval → grade → correct/rewrite → generate; handles retrieval failure gracefully via web search fallback",
-    ],
-  },
-  {
     name: "Concept Mapper",
     repo: "https://github.com/maanas1234/Concept_Mapper",
     stack: ["Flask", "Three.js", "OpenRouter API"],
