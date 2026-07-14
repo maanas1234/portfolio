@@ -1,5 +1,17 @@
 import { profile } from "../data/content";
 
+const HF_URL = "https://github.com/huggingface/transformers";
+
+function renderBio(text) {
+  const parts = text.split("Hugging Face");
+  if (parts.length === 1) return text;
+  return parts.flatMap((part, i) =>
+    i < parts.length - 1
+      ? [part, <a key={i} href={HF_URL} target="_blank" rel="noreferrer" className="text-[var(--accent)] hover:underline">Hugging Face</a>]
+      : [part]
+  );
+}
+
 export default function Home() {
   return (
     <div className="flex flex-col gap-10">
@@ -9,7 +21,7 @@ export default function Home() {
           <h1 className="text-3xl font-semibold text-[var(--text)] sm:text-4xl">{profile.tagline}</h1>
           {profile.bio.map((para, i) => (
             <p key={i} className="leading-relaxed text-[var(--text-dim)]">
-              {para}
+              {renderBio(para)}
             </p>
           ))}
 
