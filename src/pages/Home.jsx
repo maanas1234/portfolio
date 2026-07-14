@@ -1,6 +1,6 @@
 import { profile } from "../data/content";
 
-const HF_URL = "https://github.com/huggingface/transformers";
+const HF_URL = "https://huggingface.co";
 
 function renderBio(text) {
   const parts = text.split("Hugging Face");
