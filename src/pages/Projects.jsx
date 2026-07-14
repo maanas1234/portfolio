@@ -58,6 +58,7 @@ export default function Projects() {
           ))}
         </div>
       </section>
+      <p className="font-mono-tag text-sm text-[var(--text-dim)]">more building in progress. check back soon (or just watch the github).</p>
     </div>
   );
 }

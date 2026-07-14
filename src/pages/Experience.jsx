@@ -23,6 +23,7 @@ export default function Experience() {
           </ul>
         </article>
       ))}
+      <p className="font-mono-tag text-sm text-[var(--text-dim)]">more incoming. the grind doesn't stop.</p>
     </div>
   );
 }
