@@ -135,6 +135,14 @@ export const projects = [
 
 export const freelanceProjects = [
   {
+    name: "AI Automations & n8n Workflows",
+    stack: ["n8n", "Python", "REST APIs", "Webhooks"],
+    bullets: [
+      "Built and deployed AI-powered automation workflows for clients — connecting LLMs, APIs, and business tools into end-to-end pipelines that run without manual intervention",
+      "Worked extensively with n8n for workflow orchestration: trigger-based automations, multi-step data pipelines, and integrations across tools like Gmail, Notion, Slack, and custom REST APIs",
+    ],
+  },
+  {
     name: "GST Reconciliation Tool",
     stack: ["Python", "Pandas", "Streamlit", "openpyxl"],
     bullets: [
