@@ -135,6 +135,22 @@ export const projects = [
 
 export const freelanceProjects = [
   {
+    name: "GST Reconciliation Tool",
+    stack: ["Python", "Pandas", "Streamlit", "openpyxl"],
+    bullets: [
+      "Built for a CA firm to automate GSTR-2A/2B reconciliation against purchase registers during audits — cut manual effort by 70%",
+      "Handles messy, real-world data: normalizes GST numbers, flags mismatches, and exports a clean audit-ready report in one click",
+    ],
+  },
+  {
+    name: "Custom CRM",
+    stack: ["HTML", "CSS", "JavaScript", "Supabase"],
+    bullets: [
+      "Role-based CRM built for a client company — the admin assigns each employee a role that determines exactly what they can see and do (a designer has no access to financials, for instance)",
+      "Architected to scale across growing teams without restructuring: adding a new employee or role is a config change, not a code change",
+    ],
+  },
+  {
     name: "RAG Chatbot with Email Escalation",
     stack: ["n8n", "OpenAI", "Pinecone", "PostgreSQL", "Google Drive API", "Gmail API"],
     period: "Oct 2025 – Nov 2025",
@@ -159,22 +175,6 @@ export const freelanceProjects = [
     bullets: [
       "Scrapes local business listings from Google Search via SerpAPI based on user-defined queries and locations, extracting name, category, contact, and hours into Google Sheets",
       "For businesses with websites, automatically visits, strips boilerplate, and runs the clean text through Gemini to generate a concise sales-ready summary — the entire enrichment loop runs without manual input",
-    ],
-  },
-  {
-    name: "GST Reconciliation Tool",
-    stack: ["Python", "Pandas", "Streamlit", "openpyxl"],
-    bullets: [
-      "Built for a CA firm to automate GSTR-2A/2B reconciliation against purchase registers during audits — cut manual effort by 70%",
-      "Handles messy, real-world data: normalizes GST numbers, flags mismatches, and exports a clean audit-ready report in one click",
-    ],
-  },
-  {
-    name: "Custom CRM",
-    stack: ["HTML", "CSS", "JavaScript", "Supabase"],
-    bullets: [
-      "Role-based CRM built for a client company — the admin assigns each employee a role that determines exactly what they can see and do (a designer has no access to financials, for instance)",
-      "Architected to scale across growing teams without restructuring: adding a new employee or role is a config change, not a code change",
     ],
   },
 ];
