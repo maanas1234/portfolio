@@ -26,7 +26,7 @@ export const experience = [
     location: "Remote",
     period: "Jul 2026 – Present",
     bullets: [
-      "Building LLM-powered applications for students — personalized learning tools, AI tutors, and intelligent study assistants",
+      "Integrating LLMs into student-facing workflows and building multi-agent systems to power intelligent educational tools",
     ],
   },
   {
