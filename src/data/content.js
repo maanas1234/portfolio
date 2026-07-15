@@ -21,10 +21,19 @@ export const profile = {
 
 export const experience = [
   {
+    role: "LLM Engineering Intern",
+    org: "Sstudize",
+    location: "Remote",
+    period: "Jul 2026 – Present",
+    bullets: [
+      "Building LLM-powered applications for students — personalized learning tools, AI tutors, and intelligent study assistants",
+    ],
+  },
+  {
     role: "AI & Analytics Intern",
     org: "Genpact",
     location: "Jaipur, India",
-    period: "May 2026 – Present",
+    period: "May 2026 – Jun 2026",
     bullets: [
       "Replaced a $3,000 licensed reconciliation tool with a custom Python automation pipeline — cut processing time for 10,000-row files from 30+ minutes to under 5",
       "Built purchase, invoice, and GRNI reconciliation engines for Fortune 500 clients, turning manual pivot-table work into a single-file upload with instant, fully cross-matched output",
