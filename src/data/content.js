@@ -135,11 +135,30 @@ export const projects = [
 
 export const freelanceProjects = [
   {
-    name: "AI Automations & n8n Workflows",
-    stack: ["n8n", "Python", "REST APIs", "Webhooks"],
+    name: "RAG Chatbot with Email Escalation",
+    stack: ["n8n", "OpenAI", "Pinecone", "PostgreSQL", "Google Drive API", "Gmail API"],
+    period: "Oct 2025 – Nov 2025",
     bullets: [
-      "Built and deployed AI-powered automation workflows for clients — connecting LLMs, APIs, and business tools into end-to-end pipelines that run without manual intervention",
-      "Worked extensively with n8n for workflow orchestration: trigger-based automations, multi-step data pipelines, and integrations across tools like Gmail, Notion, Slack, and custom REST APIs",
+      "End-to-end RAG chatbot for internal company docs — auto-ingests files from Google Drive, chunks and embeds them into Pinecone, and answers queries grounded in the actual documents",
+      "Maintains conversation memory in PostgreSQL; if a user asks to speak to a human, the agent collects their email and fires a summarized conversation thread via Gmail — no manual handoff needed",
+    ],
+  },
+  {
+    name: "Resume Screener Agent",
+    stack: ["n8n", "OpenAI", "Groq", "PDF.co", "JavaScript", "Webhooks"],
+    period: "Jul 2025 – Sep 2025",
+    bullets: [
+      "Webhook-triggered pipeline that parses resumes and job descriptions from PDFs, then runs multiple AI agents to score candidates across keyword match, seniority, experience, and impact signals",
+      "Each dimension scores independently and aggregates into a final hire/no-hire recommendation with evidence — output is structured and recruiter-ready, not just a keyword hit count",
+    ],
+  },
+  {
+    name: "Business Lead Scraper & AI Enrichment",
+    stack: ["n8n", "SerpAPI", "Google Gemini", "Google Sheets", "JavaScript"],
+    period: "Aug 2025",
+    bullets: [
+      "Scrapes local business listings from Google Search via SerpAPI based on user-defined queries and locations, extracting name, category, contact, and hours into Google Sheets",
+      "For businesses with websites, automatically visits, strips boilerplate, and runs the clean text through Gemini to generate a concise sales-ready summary — the entire enrichment loop runs without manual input",
     ],
   },
   {
