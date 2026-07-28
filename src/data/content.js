@@ -142,6 +142,39 @@ export const projects = [
   },
 ];
 
+export const ossContributions = [
+  {
+    repo: "huggingface/tau",
+    url: "https://github.com/huggingface/tau/pull/314",
+    pr: "#314",
+    description: "Added NVIDIA NIM as a model provider to the catalog",
+  },
+  {
+    repo: "huggingface/tau",
+    url: "https://github.com/huggingface/tau/pull/290",
+    pr: "#290",
+    description: "Fixed CLI crash on Windows by forcing UTF-8 on stdout/stderr for non-ASCII output",
+  },
+  {
+    repo: "huggingface/tau",
+    url: "https://github.com/huggingface/tau/pull/289",
+    pr: "#289",
+    description: "Fixed Gemini tool calls by correctly round-tripping thoughtSignature through the request/response cycle",
+  },
+  {
+    repo: "huggingface/transformers",
+    url: "https://github.com/huggingface/transformers/pull/45150",
+    pr: "#45150",
+    description: "Fixed incorrect TrainingArguments example in the training docs",
+  },
+  {
+    repo: "ShenSeanChen/waku-agent",
+    url: "https://github.com/ShenSeanChen/waku-agent/pull/1",
+    pr: "#1",
+    description: "Added OpenRouter as a model provider option",
+  },
+];
+
 export const freelanceProjects = [
   {
     name: "GST Reconciliation Tool",

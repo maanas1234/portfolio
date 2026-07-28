@@ -1,4 +1,4 @@
-import { projects, freelanceProjects } from "../data/content";
+import { projects, freelanceProjects, ossContributions } from "../data/content";
 import Tag from "../components/Tag";
 
 function ProjectCard({ project }) {
@@ -59,6 +59,25 @@ export default function Projects() {
         </div>
       </section>
       <p className="font-mono-tag text-sm text-[var(--text-dim)]">more building in progress. check back soon (or just watch the github).</p>
+
+      <section className="flex flex-col gap-6">
+        <h2 className="text-xl font-semibold text-[var(--text)]">
+          OSS Contributions
+          <span className="ml-2 font-mono-tag text-sm font-normal text-[var(--text-dim)]">merged PRs</span>
+        </h2>
+        <div className="flex flex-col gap-3">
+          {ossContributions.map((c) => (
+            <div key={c.url} className="rounded-lg border border-[var(--border)] bg-[var(--bg-raised)] px-5 py-4">
+              <div className="mb-1 flex flex-wrap items-baseline justify-between gap-2">
+                <a href={c.url} target="_blank" rel="noreferrer" className="font-mono-tag text-sm text-[var(--accent)] hover:underline">
+                  {c.repo} {c.pr}
+                </a>
+              </div>
+              <p className="text-sm leading-relaxed text-[var(--text-dim)]">{c.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
