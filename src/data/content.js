@@ -73,6 +73,16 @@ export const experience = [
 
 export const projects = [
   {
+    name: "small-llm-from-scratch",
+    repo: "https://github.com/maanas1234/small-llm-from-scratch",
+    stack: ["Python", "PyTorch", "Jupyter", "Gradio", "Hugging Face Spaces"],
+    bullets: [
+      "Built a GPT-style language model end-to-end in PyTorch with zero library shortcuts — every component (autograd, causal self-attention, Grouped-Query Attention, transformer block, training loop) implemented from raw tensor operations",
+      "Pretrained on TinyStories (~112M tokens) on a free-tier T4 GPU; loss dropped from ~10.97 (random baseline) to ~2.5 over 1 epoch with AdamW and a warmup+linear-decay schedule",
+      "Deployed as a live Gradio app on Hugging Face Spaces with temperature and top-k sampling — demo at huggingface.co/spaces/maanas1234321/small-llm-from-scratch",
+    ],
+  },
+  {
     name: "RAG Eval System",
     repo: "https://github.com/maanas1234/RAG-Eval-System",
     stack: ["LangChain", "Chroma", "BM25", "RAGAS", "sentence-transformers", "Python"],
