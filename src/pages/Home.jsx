@@ -17,6 +17,13 @@ export default function Home() {
     <div className="flex flex-col gap-10">
       <section className="flex flex-col gap-4">
         <div className="flex flex-col gap-4">
+          <div className="inline-flex w-fit items-center gap-2.5 rounded-full border border-[var(--border)] bg-[var(--bg-raised)] px-4 py-2 font-mono-tag text-sm text-[var(--text)]">
+            <span className="relative flex h-2 w-2 shrink-0">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-green-400" />
+            </span>
+            Open to Summer 2027 · AI Engineer Internships
+          </div>
 <p className="font-mono-tag text-sm text-[var(--accent)]">Hi, I'm Maanas</p>
           <h1 className="text-3xl font-semibold text-[var(--text)] sm:text-4xl">{profile.tagline}</h1>
           {profile.bio.map((para, i) => (
