@@ -154,6 +154,12 @@ export const projects = [
 
 export const ossContributions = [
   {
+    repo: "TrenTorch/TrenTorch",
+    url: "https://github.com/TrenTorch/TrenTorch",
+    pr: null,
+    description: "Core engineer on open-source educational deep learning framework inspired by Harvard's TinyTorch — teaches PyTorch internals by rebuilding every component from scratch; 53 stars in 2 weeks. Own the tren CLI layer: test runner, Jupyter integration, progress tracking, and benchmarking pipeline.",
+  },
+  {
     repo: "huggingface/tau",
     url: "https://github.com/huggingface/tau/pull/314",
     pr: "#314",
