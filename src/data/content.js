@@ -3,8 +3,8 @@ export const profile = {
   tagline: "AI Engineer. Occasional Researcher.",
   bio: [
     "I'm an I.T. undergraduate student. I love the field of deep learning and am a sucker for transformers. I have worked with Fortune 500 companies, building automations for them.",
-    "Most of my time goes into LLM applications and agentic systems: RAG pipelines, corrective retrieval, local-first tools that don't need the cloud to be useful.",
-    "Lately I've been getting into AI systems design, how all the pieces actually connect: models, memory, tools, and orchestration into something that works end to end.",
+    "Most of my time goes into LLM applications and agentic systems: RAG pipelines, evaluation harnesses, and multi-agent architectures.",
+    "Lately pulled toward world models and AI infrastructure, the parts of the stack where the real architectural decisions get made.",
     "I've published a preprint on positional bias in peer review, and have a second paper (on why LLM agents get lazier the longer they talk) under review.",
     "30+ repos on GitHub, contributor to Hugging Face, and a habit of turning weird personal observations into actual experiments.",
     "Co-building TrenTorch, an open-source educational deep learning framework that hit 90+ stars in 2 days of launch.",
