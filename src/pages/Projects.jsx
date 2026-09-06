@@ -1,7 +1,20 @@
+import { useState, useEffect } from "react";
 import { projects } from "../data/content";
 import Tag from "../components/Tag";
 
 function ProjectCard({ project }) {
+  const [liveStars, setLiveStars] = useState(project.stars ?? null);
+
+  useEffect(() => {
+    if (!project.stars || !project.repo) return;
+    const match = project.repo.match(/github\.com\/([^/]+\/[^/]+)/);
+    if (!match) return;
+    fetch(`https://api.github.com/repos/${match[1]}`)
+      .then((r) => r.json())
+      .then((data) => { if (data.stargazers_count) setLiveStars(data.stargazers_count); })
+      .catch(() => {});
+  }, [project.repo, project.stars]);
+
   return (
     <article className="rounded-lg border border-[var(--border)] bg-[var(--bg-raised)] p-6">
       <div className="mb-2 flex flex-wrap items-baseline justify-between gap-2">
@@ -15,9 +28,9 @@ function ProjectCard({ project }) {
               project.name
             )}
           </h2>
-          {project.stars && (
+          {liveStars && (
             <span className="font-mono-tag text-xs text-[var(--accent)] border border-[var(--accent)] rounded px-1.5 py-0.5">
-              ★ {project.stars}
+              ★ {liveStars}
             </span>
           )}
         </div>

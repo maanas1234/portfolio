@@ -1,14 +1,29 @@
 import { profile } from "../data/content";
 
-const HF_URL = "https://huggingface.co";
+const BIO_LINKS = [
+  { text: "Hugging Face", url: "https://huggingface.co" },
+  { text: "TrenTorch", url: "https://github.com/TrenTorch/TrenTorch" },
+];
 
 function renderBio(text) {
-  const parts = text.split("Hugging Face");
-  if (parts.length === 1) return text;
-  return parts.flatMap((part, i) =>
-    i < parts.length - 1
-      ? [part, <a key={i} href={HF_URL} target="_blank" rel="noreferrer" className="text-[var(--accent)] hover:underline">Hugging Face</a>]
-      : [part]
+  let segments = [{ type: "text", content: text }];
+  for (const { text: linkText, url } of BIO_LINKS) {
+    const next = [];
+    for (const seg of segments) {
+      if (seg.type !== "text") { next.push(seg); continue; }
+      const parts = seg.content.split(linkText);
+      parts.forEach((part, i) => {
+        if (part) next.push({ type: "text", content: part });
+        if (i < parts.length - 1) next.push({ type: "link", content: linkText, url });
+      });
+    }
+    segments = next;
+  }
+  if (segments.length === 1 && segments[0].type === "text") return text;
+  return segments.map((seg, i) =>
+    seg.type === "link"
+      ? <a key={i} href={seg.url} target="_blank" rel="noreferrer" className="text-[var(--accent)] hover:underline">{seg.content}</a>
+      : seg.content
   );
 }
 
