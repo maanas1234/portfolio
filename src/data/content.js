@@ -4,10 +4,11 @@ export const profile = {
   bio: [
     "I'm an I.T. undergraduate student. I love the field of deep learning and am a sucker for transformers. I have worked with Fortune 500 companies, building automations for them.",
     "Most of my time goes into LLM applications and agentic systems: RAG pipelines, corrective retrieval, local-first tools that don't need the cloud to be useful.",
-    "Lately I've been getting into AI systems design — how all the pieces actually connect: models, memory, tools, and orchestration into something that works end to end.",
-    "I've published a preprint on positional bias in peer review, and have a second paper — on why LLM agents get lazier the longer they talk — under review.",
+    "Lately I've been getting into AI systems design, how all the pieces actually connect: models, memory, tools, and orchestration into something that works end to end.",
+    "I've published a preprint on positional bias in peer review, and have a second paper (on why LLM agents get lazier the longer they talk) under review.",
     "30+ repos on GitHub, contributor to Hugging Face, and a habit of turning weird personal observations into actual experiments.",
-    "I also freelance on the side — AI and automation builds for whoever needs one.",
+    "Co-building TrenTorch, an open-source educational deep learning framework that hit 90+ stars in 2 days of launch.",
+    "I also freelance on the side, AI and automation builds for whoever needs one.",
     "I think of myself as someone who wants to understand everything precisely enough to rebuild it from scratch, and won't stop until the proof, the product, or the paycheck confirms he actually did.",
   ],
   email: "maanastyagi2006@gmail.com",
@@ -81,7 +82,7 @@ export const projects = [
     bullets: [
       "Core engineer on open-source educational deep learning framework inspired by Harvard's TinyTorch — teaches PyTorch internals by having learners rebuild every component (autograd, attention, optimizers, training loop) from scratch in NumPy and Python",
       "Own the tren CLI layer: test runner, student progress tracking, Jupyter server integration, and benchmarking pipeline across the 20-module curriculum",
-      "Reached 90+ stars and 10+ forks within weeks of launch — one of the faster-growing educational ML repos on GitHub",
+      "Reached 90+ stars and 10+ forks within 2 days of launch — one of the faster-growing educational ML repos on GitHub",
     ],
   },
   {
