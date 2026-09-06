@@ -5,15 +5,22 @@ function ProjectCard({ project }) {
   return (
     <article className="rounded-lg border border-[var(--border)] bg-[var(--bg-raised)] p-6">
       <div className="mb-2 flex flex-wrap items-baseline justify-between gap-2">
-        <h2 className="text-lg font-medium text-[var(--text)]">
-          {project.repo ? (
-            <a href={project.repo} target="_blank" rel="noreferrer" className="hover:text-[var(--accent)]">
-              {project.name}
-            </a>
-          ) : (
-            project.name
+        <div className="flex items-center gap-2">
+          <h2 className="text-lg font-medium text-[var(--text)]">
+            {project.repo ? (
+              <a href={project.repo} target="_blank" rel="noreferrer" className="hover:text-[var(--accent)]">
+                {project.name}
+              </a>
+            ) : (
+              project.name
+            )}
+          </h2>
+          {project.stars && (
+            <span className="font-mono-tag text-xs text-[var(--accent)] border border-[var(--accent)] rounded px-1.5 py-0.5">
+              ★ {project.stars}
+            </span>
           )}
-        </h2>
+        </div>
         {project.period && (
           <span className="font-mono-tag text-xs text-[var(--text-dim)]">{project.period}</span>
         )}

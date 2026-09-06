@@ -73,6 +73,18 @@ export const experience = [
 
 export const projects = [
   {
+    name: "TrenTorch",
+    repo: "https://github.com/TrenTorch/TrenTorch",
+    stars: "90+",
+    period: "Aug 2026 – Present",
+    stack: ["Python", "NumPy", "CLI", "OSS"],
+    bullets: [
+      "Core engineer on open-source educational deep learning framework inspired by Harvard's TinyTorch — teaches PyTorch internals by having learners rebuild every component (autograd, attention, optimizers, training loop) from scratch in NumPy and Python",
+      "Own the tren CLI layer: test runner, student progress tracking, Jupyter server integration, and benchmarking pipeline across the 20-module curriculum",
+      "Reached 90+ stars and 10+ forks within weeks of launch — one of the faster-growing educational ML repos on GitHub",
+    ],
+  },
+  {
     name: "small-llm-from-scratch",
     repo: "https://github.com/maanas1234/small-llm-from-scratch",
     stack: ["Python", "PyTorch", "Jupyter", "Gradio", "Hugging Face Spaces"],
@@ -153,12 +165,6 @@ export const projects = [
 ];
 
 export const ossContributions = [
-  {
-    repo: "TrenTorch/TrenTorch",
-    url: "https://github.com/TrenTorch/TrenTorch",
-    pr: null,
-    description: "Core engineer on open-source educational deep learning framework inspired by Harvard's TinyTorch — teaches PyTorch internals by rebuilding every component from scratch; 53 stars in 2 weeks. Own the tren CLI layer: test runner, Jupyter integration, progress tracking, and benchmarking pipeline.",
-  },
   {
     repo: "huggingface/tau",
     url: "https://github.com/huggingface/tau/pull/314",
