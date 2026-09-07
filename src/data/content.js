@@ -7,7 +7,7 @@ export const profile = {
     "Lately pulled toward world models and AI infrastructure, the parts of the stack where the real architectural decisions get made.",
     "I've published a preprint on positional bias in peer review, and have a second paper (on why LLM agents get lazier the longer they talk) under review.",
     "30+ repos on GitHub, contributor to Hugging Face, and a habit of turning weird personal observations into actual experiments.",
-    "Co-building TrenTorch, an open-source educational deep learning framework that hit 90+ stars in 2 days of launch.",
+    "Co-building TrenTorch, an open-source educational deep learning framework that hit 130+ stars in 2 days of launch.",
     "I also freelance on the side, AI and automation builds for whoever needs one.",
     "I think of myself as someone who wants to understand everything precisely enough to rebuild it from scratch, and won't stop until the proof, the product, or the paycheck confirms he actually did.",
   ],
@@ -76,13 +76,13 @@ export const projects = [
   {
     name: "TrenTorch",
     repo: "https://github.com/TrenTorch/TrenTorch",
-    stars: "90+",
+    stars: "130+",
     period: "Aug 2026 – Present",
     stack: ["Python", "NumPy", "CLI", "OSS"],
     bullets: [
       "Core engineer on open-source educational deep learning framework inspired by Harvard's TinyTorch — teaches PyTorch internals by having learners rebuild every component (autograd, attention, optimizers, training loop) from scratch in NumPy and Python",
       "Own the tren CLI layer: test runner, student progress tracking, Jupyter server integration, and benchmarking pipeline across the 20-module curriculum",
-      "Reached 90+ stars and 10+ forks within 2 days of launch — one of the faster-growing educational ML repos on GitHub",
+      "Reached 130+ stars and 10+ forks within 2 days of launch — one of the faster-growing educational ML repos on GitHub",
     ],
   },
   {
