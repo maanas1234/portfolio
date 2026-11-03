@@ -6,8 +6,8 @@ export const profile = {
     "Most of my time goes into LLM applications and agentic systems: RAG pipelines, evaluation harnesses, and multi-agent architectures.",
     "Lately pulled toward world models and AI infrastructure, the parts of the stack where the real architectural decisions get made.",
     "I've published a preprint on positional bias in peer review, and have a second paper (on why LLM agents get lazier the longer they talk) under review.",
-    "30+ repos on GitHub, contributor to Hugging Face, and a habit of turning weird personal observations into actual experiments.",
-    "Co-building TrenTorch, an open-source educational deep learning framework that hit 130+ stars in 2 days of launch.",
+    "100+ merged PRs across open source, including Hugging Face, and a habit of turning weird personal observations into actual experiments.",
+    "Co-maintaining TrenTorch, an open-source educational deep learning framework: 750+ stars, 6,000+ users, and 7,000+ unique clones.",
     "I also freelance on the side, AI and automation builds for whoever needs one.",
     "I think of myself as someone who wants to understand everything precisely enough to rebuild it from scratch, and won't stop until the proof, the product, or the paycheck confirms he actually did.",
   ],
@@ -22,12 +22,34 @@ export const profile = {
 
 export const experience = [
   {
-    role: "LLM Engineering Intern",
+    role: "AI Engineer & Consultant",
+    org: "Swayu",
+    location: "Remote",
+    period: "Oct 2026 – Present",
+    bullets: [
+      "Own an entire feature of the flagship product end to end, from architecture and AI integration through production delivery",
+      "Build marketing and go-to-market (GTM) automation pipelines that replace manual outreach and campaign workflows with LLM-driven systems",
+    ],
+  },
+  {
+    role: "Core Engineer & Co-Maintainer",
+    org: "TrenTorch (open source)",
+    location: "Remote",
+    period: "Aug 2026 – Present",
+    bullets: [
+      "Co-maintain the platform (750+ stars, 6,000+ users, 7,000+ unique clones) with 65+ merged PRs across the tren CLI and the TrenTorch-Web browser IDE; own the CLI: test runner, Jupyter integration, benchmarking, Windows compatibility",
+      "Authored 25+ curriculum modules: quantization, mixed precision, CUDA kernels, RLHF/DPO/GRPO, deployment, and drift monitoring",
+    ],
+  },
+  {
+    role: "LLM Engineer",
     org: "Sstudize",
     location: "Remote",
-    period: "Jul 2026 – Present",
+    period: "Jul 2026 – Nov 2026",
     bullets: [
-      "Integrating LLMs into student-facing workflows and building multi-agent systems to power intelligent educational tools",
+      "Built StudentGPT from 0 to 1, an AI tutor for JEE/NEET students: streaming FastAPI backend with five tutoring modes, pgvector semantic cache, OCR image input, and daily credits; merged to the platform repo with CI and 22 passing tests",
+      "Engineered AI cost to a $1 per student per year budget: ~$0.0001 per message (~10,400 messages per student-year) using one low-cost model and OCR instead of vision, avoiding a 16-20x cost per image query",
+      "Built Sstudi Rating from 0 to 1, an Elo-style skill rating engine updated on every test submission; shipped to production and verified on 540 real questions with 0 calculation errors against hand-computed values",
     ],
   },
   {
@@ -76,13 +98,13 @@ export const projects = [
   {
     name: "TrenTorch",
     repo: "https://github.com/TrenTorch/TrenTorch",
-    stars: "130+",
+    stars: "750+",
     period: "Aug 2026 – Present",
     stack: ["Python", "NumPy", "CLI", "OSS"],
     bullets: [
       "Core engineer on open-source educational deep learning framework inspired by Harvard's TinyTorch — teaches PyTorch internals by having learners rebuild every component (autograd, attention, optimizers, training loop) from scratch in NumPy and Python",
       "Own the tren CLI layer: test runner, student progress tracking, Jupyter server integration, and benchmarking pipeline across the 20-module curriculum",
-      "Reached 130+ stars and 10+ forks within 2 days of launch — one of the faster-growing educational ML repos on GitHub",
+      "Reached 750+ stars and 6,000+ users, with 7,000+ unique clones and 50,000+ organic views on X after launch — one of the faster-growing educational ML repos on GitHub",
     ],
   },
   {
@@ -241,6 +263,27 @@ export const freelanceProjects = [
       "Scrapes local business listings from Google Search via SerpAPI based on user-defined queries and locations, extracting name, category, contact, and hours into Google Sheets",
       "For businesses with websites, automatically visits, strips boilerplate, and runs the clean text through Gemini to generate a concise sales-ready summary — the entire enrichment loop runs without manual input",
     ],
+  },
+];
+
+export const articles = [
+  {
+    title: "I got internship offer from my opensource work. Here's how you can do the same.",
+    url: "https://x.com/maanas_tyagi/status/2116255518461424126",
+    date: "Oct 31, 2026",
+    views: "6K views",
+  },
+  {
+    title: "I benchmarked Sarvam's Models on Eminem's Rapgod, just because I can.",
+    url: "https://x.com/maanas_tyagi/status/2114994575177584859",
+    date: "Oct 27, 2026",
+    views: "433 views",
+  },
+  {
+    title: "How I would learn AI Engineering from scratch.",
+    url: "https://x.com/maanas_tyagi/status/2090150783069434258",
+    date: "Aug 20, 2026",
+    views: "4K views",
   },
 ];
 
